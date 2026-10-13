@@ -9,7 +9,7 @@ class Tab4Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WinCaloriePro • Progress'),
+        title: const Text('Win • Progress'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
