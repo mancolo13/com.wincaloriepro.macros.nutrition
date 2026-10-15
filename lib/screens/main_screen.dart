@@ -16,10 +16,10 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _screens = const [
+    Tab4Screen(),
+    Tab3Screen(),
     Tab1Screen(),
     Tab2Screen(),
-    Tab3Screen(),
-    Tab4Screen(),
   ];
 
   @override
@@ -33,16 +33,6 @@ class _MainScreenState extends State<MainScreen> {
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
         NavigationDestination(
-          icon: const Icon(Icons.lunch_dining_outlined),
-          selectedIcon: const Icon(Icons.lunch_dining, color: AppTheme.primaryColor),
-          label: 'Tracker',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.pie_chart_outline_rounded),
-          selectedIcon: const Icon(Icons.pie_chart, color: AppTheme.primaryColor),
-          label: 'Macros',
-        ),
-        NavigationDestination(
           icon: const Icon(Icons.qr_code_scanner_outlined),
           selectedIcon: const Icon(Icons.qr_code_scanner, color: AppTheme.primaryColor),
           label: 'Barcode',
@@ -52,7 +42,16 @@ class _MainScreenState extends State<MainScreen> {
           selectedIcon: const Icon(Icons.scale, color: AppTheme.primaryColor),
           label: 'Progress',
         ),
-
+        NavigationDestination(
+          icon: const Icon(Icons.pie_chart_outline_rounded),
+          selectedIcon: const Icon(Icons.pie_chart, color: AppTheme.primaryColor),
+          label: 'Macros',
+        ),
+        NavigationDestination(
+          icon: const Icon(Icons.lunch_dining_outlined),
+          selectedIcon: const Icon(Icons.lunch_dining, color: AppTheme.primaryColor),
+          label: 'Tracker',
+        ),
         ],
       ),
     );
